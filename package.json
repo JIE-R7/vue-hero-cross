@@ -1,0 +1,68 @@
+{
+  "name": "vue-hero-cross",
+  "version": "1.0.0",
+  "description": "A Vue directive for smooth cross-component Hero animations, compatible with Vue 3",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run build:types",
+    "build:types": "tsc --declaration --emitDeclarationOnly --outDir dist",
+    "preview": "vite preview",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "vue",
+    "vue3",
+    "hero",
+    "animation",
+    "transition",
+    "directive",
+    "cross-component",
+    "smooth",
+    "flipping"
+  ],
+  "author": "JIE jie_tech@163.com",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JIE-R7/vue-hero-cross.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JIE-R7/vue-hero-cross/issues"
+  },
+  "homepage": "https://github.com/JIE-R7/vue-hero-cross#readme",
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "@vue/composition-api": "^1.7.0",
+    "@vue/test-utils": "^2.4.0",
+    "eslint": "^8.45.0",
+    "eslint-plugin-vue": "^9.15.0",
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "vite": "^4.4.0",
+    "vite-plugin-dts": "^3.5.0",
+    "vitest": "^0.34.0",
+    "vue": "^3.3.0",
+    "vue-demi": "^0.14.10"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "packageManager": "pnpm@10.23.0"
+}
