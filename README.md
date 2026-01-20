@@ -37,7 +37,7 @@ import { vHero } from 'vue-hero-cross'
 
 <template>
   <!-- 给任意元素加上 v-hero 指令即可 -->
-  <img v-hero:myId src="./logo.png" />
+  <img v-hero="{ id: 'my-animation' }" src="./logo.png" />
 </template>
 ```
 
@@ -45,13 +45,13 @@ import { vHero } from 'vue-hero-cross'
 
 ```vue
 <!-- 列表页 -->
-<img v-hero:myId src="./logo.png" @click="goDetail" />
+<img v-hero="{ id: 'my-animation' }" src="./logo.png" @click="goDetail" />
 
 <!-- 详情页 -->
-<img v-hero:myId src="./logo.png" />
+<img v-hero="{ id: 'my-animation' }" src="./logo.png" />
 ```
 
-当路由从列表页跳转到详情页时，两个 `v-hero:myId` 会自动执行 Hero 动画，无需手动计算坐标。
+当路由从列表页跳转到详情页时，两个 `v-hero="{ id: 'my-animation' }"` 会自动执行 Hero 动画，无需手动计算坐标。
 
 ---
 
