@@ -1,6 +1,6 @@
 {
   "name": "vue-hero-cross",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Vue directive for smooth cross-component Hero animations, compatible with Vue 3",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
